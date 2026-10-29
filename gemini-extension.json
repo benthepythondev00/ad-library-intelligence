@@ -1,0 +1,23 @@
+{
+  "name": "ad-library-intelligence",
+  "version": "1.0.0",
+  "description": "Competitor ads from the Meta, Google Ads Transparency and LinkedIn ad libraries, plus ads.txt sellers. Hosted MCP server, bring your MCPize key.",
+  "mcpServers": {
+    "ad-library-intelligence": {
+      "httpUrl": "https://ad-library-intelligence.mcpize.run/mcp",
+      "headers": {
+        "Authorization": "Bearer ${MCPIZE_API_KEY}"
+      },
+      "timeout": 120000
+    }
+  },
+  "contextFileName": "GEMINI.md",
+  "settings": [
+    {
+      "name": "MCPize API key",
+      "description": "Your key for Ad Library Intelligence. Subscribe on MCPize (Free plan available) and copy the key from the server page.",
+      "envVar": "MCPIZE_API_KEY",
+      "sensitive": true
+    }
+  ]
+}
